@@ -5,4 +5,6 @@ metadata:
   name: podinfo
   namespace: podinfo
 spec:
-  values: {}
+  values:
+    service:
+      type: LoadBalancer
