@@ -4,3 +4,4 @@ kind: Component
 resources:
   - metallb.yaml
   - podinfo.yaml
+  - sealed-secrets.yaml
