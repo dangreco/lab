@@ -12,7 +12,11 @@ spec:
   path: ./apps/podinfo/_base
   prune: true
   timeout: 2m
-
+  healthChecks:
+    - apiVersion: apps/v1
+      kind: Deployment
+      name: podinfo
+      namespace: podinfo
 # ---
 # apiVersion: kustomize.toolkit.fluxcd.io/v1
 # kind: Kustomization
