@@ -5,4 +5,5 @@ components:
   - ../_base
 resources:
   - metallb.yaml
-  - podinfo.yaml
+patches:
+  - path: podinfo.yaml
