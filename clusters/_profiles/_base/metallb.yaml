@@ -12,8 +12,3 @@ spec:
   path: ./infrastructure/metallb/_base
   prune: true
   timeout: 2m
-  healthChecks:
-    - apiVersion: apps/v1
-      kind: Deployment
-      name: metallb-controller
-      namespace: metallb-system
