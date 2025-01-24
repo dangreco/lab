@@ -2,8 +2,8 @@
 apiVersion: metallb.io/v1beta1
 kind: L2Advertisement
 metadata:
-  name: lab--l2-advertisment
-  namespace: metallb
+  name: metallb-l2-advertisment
+  namespace: metallb-system
 spec:
   ipAddressPools:
-    - lab--metallb-ipaddresspool
+    - metallb-ipaddresspool
