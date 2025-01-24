@@ -5,15 +5,5 @@ metadata:
   name: podinfo--podinfo
   namespace: flux-system
 spec:
-  interval: 15m
-  sourceRef:
-    kind: GitRepository
-    name: flux-system
-  path: ./apps/podinfo/_base
-  prune: true
-  timeout: 2m
-  healthChecks:
-    - apiVersion: apps/v1
-      kind: Deployment
-      name: podinfo
-      namespace: podinfo
+  components:
+    - ../lab
