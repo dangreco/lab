@@ -6,4 +6,4 @@ metadata:
   namespace: metallb
 spec:
   ipAddressPools:
-    - metallb-pool
+    - lab--metallb-ipaddresspool
