@@ -13,17 +13,17 @@ spec:
   prune: true
   timeout: 2m
 
----
-apiVersion: kustomize.toolkit.fluxcd.io/v1
-kind: Kustomization
-metadata:
-  name: config--podinfo
-  namespace: flux-system
-spec:
-  interval: 15m
-  sourceRef:
-    kind: GitRepository
-    name: flux-system
-  path: ./apps/podinfo/lab
-  prune: true
-  timeout: 2m
+# ---
+# apiVersion: kustomize.toolkit.fluxcd.io/v1
+# kind: Kustomization
+# metadata:
+#   name: config--podinfo
+#   namespace: flux-system
+# spec:
+#   interval: 15m
+#   sourceRef:
+#     kind: GitRepository
+#     name: flux-system
+#   path: ./apps/podinfo/lab
+#   prune: true
+#   timeout: 2m
